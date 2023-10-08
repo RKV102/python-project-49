@@ -4,3 +4,6 @@
 
 ### Пример работы игры "Проверка на чётность"
 [![asciicast](https://asciinema.org/a/2TWGpUcDGiRCo3iIzJzahLt2s.svg)](https://asciinema.org/a/2TWGpUcDGiRCo3iIzJzahLt2s)
+
+### Пример работы игры "Калькулятор"
+[![asciicast](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE.svg)](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE)
