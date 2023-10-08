@@ -1,4 +1,5 @@
 import random
+from brain_games.parity_check import error_output
 
 
 def gen_numbers():
@@ -21,12 +22,6 @@ def calculation(number_1, math_sign, number_2):
     else:
         calculation_result = number_1 * number_2
     return calculation_result
-
-
-def error_output(wrong_answer, right_answer, name):
-    print(f'"{wrong_answer}" is wrong answer ;(. '
-          + f'Correct answer was "{right_answer}".')
-    print(f"Let's try again, {name}!")
 
 
 def game(name):

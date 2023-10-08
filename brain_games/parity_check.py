@@ -8,11 +8,15 @@ def is_even(input):
     return False
 
 
-def error_output(wrong_answer, rand_int_parity, name):
+def error_handler(wrong_answer, rand_int_parity, name):
     if rand_int_parity is True:
         right_answer = 'yes'
     else:
         right_answer = 'no'
+    error_output(wrong_answer, right_answer, name)
+
+
+def error_output(wrong_answer, right_answer, name):
     print(f'"{wrong_answer}" is wrong answer ;(. '
           + f'Correct answer was "{right_answer}".')
     print(f"Let's try again, {name}!")
@@ -31,7 +35,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_output(answer, rand_int_parity, name)
+            error_handler(answer, rand_int_parity, name)
             break
     if count == 3:
         print(f'Congratulations, {name}!')
