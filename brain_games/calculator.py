@@ -3,8 +3,8 @@ from brain_games.parity_check import error_output
 
 
 def gen_numbers():
-    number_1 = random.randint(0, 100)
-    number_2 = random.randint(0, 100)
+    number_1 = random.randint(1, 100)
+    number_2 = random.randint(1, 100)
     return (number_1, number_2)
 
 
