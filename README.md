@@ -7,3 +7,6 @@
 
 ### Пример работы игры "Калькулятор"
 [![asciicast](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE.svg)](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE)
+
+### Пример работы игры "Наибольший общий делитель"
+[![asciicast](https://asciinema.org/a/ECWz7Me6uICbwpN9UHsHcTLTv.svg)](https://asciinema.org/a/ECWz7Me6uICbwpN9UHsHcTLTv)
