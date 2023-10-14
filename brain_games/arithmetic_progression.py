@@ -33,7 +33,7 @@ def game(name):
     print('What number is missing in the progression?')
     while count < 3:
         progression = get_progression(progression_len)
-        position_for_cut = random.randint(0, progression_len-1)
+        position_for_cut = random.randint(0, progression_len - 1)
         progression, number_for_cut \
             = cut_progression_number(progression, position_for_cut)
         progression = turn_progression_to_str(progression)
