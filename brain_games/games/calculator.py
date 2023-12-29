@@ -1,5 +1,5 @@
 import random
-from brain_games.parity_check import error_output
+from brain_games.games.parity_check import error_output
 
 
 def gen_numbers():

@@ -1,6 +1,6 @@
 import random
-from brain_games.parity_check import error_output
-from brain_games.calculator import gen_numbers
+from brain_games.games.parity_check import error_output
+from brain_games.games.calculator import gen_numbers
 
 
 def get_progression(progression_len):

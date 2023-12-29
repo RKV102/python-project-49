@@ -1,5 +1,5 @@
-from brain_games.parity_check import error_handler
-from brain_games.calculator import gen_numbers
+from brain_games.games.parity_check import error_handler
+from brain_games.games.calculator import gen_numbers
 
 
 def is_prime(number):
