@@ -1,9 +1,10 @@
 import brain_games.cli
 import brain_games.games.greatest_common_divisor
+from brain_games.shared.greeting import main as greeting
 
 
 def main():
-    print('Welcome to the Brain Games!')
+    greeting()
     user_name = brain_games.cli.welcome_user()
     brain_games.games.greatest_common_divisor.game(user_name)
 
