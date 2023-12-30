@@ -1,11 +1,11 @@
-import random
+from random import choice
 from brain_games.shared.error_output import main as error_output
 from brain_games.shared.gen_numbers import main as gen_numbers
 
 
 def math_sign_selection():
     math_signs = ('+', '-', '*')
-    selected_math_sign = random.choice(math_signs)
+    selected_math_sign = choice(math_signs)
     return selected_math_sign
 
 

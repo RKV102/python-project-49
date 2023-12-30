@@ -1,4 +1,4 @@
-import random
+from random import randint
 from brain_games.shared.error_handler import main as error_handler
 
 
@@ -13,7 +13,7 @@ def game():
     count = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while count < 3:
-        rand_int = random.randint(0, 100)
+        rand_int = randint(0, 100)
         rand_int_parity = is_even(rand_int)
         print(f'Question: {rand_int}')
         answer = input('Your answer: ')
