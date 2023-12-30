@@ -5,7 +5,7 @@ from brain_games.shared.greeting import main as greeting
 
 def main():
     greeting()
-    user_name = brain_games.cli.welcome_user()
+    user_name = brain_games.cli.welcome_user() # CLI ничего не возвращает
     brain_games.games.calculator.game(user_name)
 
 

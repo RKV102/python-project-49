@@ -1,11 +1,6 @@
 import random
-from brain_games.games.parity_check import error_output
-
-
-def gen_numbers():
-    number_1 = random.randint(1, 100)
-    number_2 = random.randint(1, 100)
-    return (number_1, number_2)
+from brain_games.shared.error_output import main as error_output
+from brain_games.shared.gen_numbers import main as gen_numbers
 
 
 def math_sign_selection():

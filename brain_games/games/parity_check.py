@@ -1,4 +1,5 @@
 import random
+from brain_games.shared.error_handler import main as error_handler
 
 
 def is_even(input):
@@ -6,20 +7,6 @@ def is_even(input):
     if input_mod == 0:
         return True
     return False
-
-
-def error_handler(wrong_answer, rand_int_parity, name):
-    if rand_int_parity is True:
-        right_answer = 'yes'
-    else:
-        right_answer = 'no'
-    error_output(wrong_answer, right_answer, name)
-
-
-def error_output(wrong_answer, right_answer, name):
-    print(f'"{wrong_answer}" is wrong answer ;(. '
-          + f'Correct answer was "{right_answer}".')
-    print(f"Let's try again, {name}!")
 
 
 def game(name):
