@@ -1,5 +1,6 @@
-from brain_games.shared.error_output import main as error_output
 from brain_games.shared.gen_numbers import main as gen_numbers
+from brain_games.shared.is_equal import main as is_equal
+from brain_games.shared.qa import main as qa
 
 
 def get_gcd(number_1, number_2):
@@ -27,13 +28,10 @@ def game():
     while count < 3:
         number_1, number_2 = gen_numbers()
         gcd = get_gcd(number_1, number_2)
-        print(f'Question: {number_1} {number_2}')
-        answer = int(input('Your answer: '))
-        if answer == gcd:
-            print('Correct!')
+        answer = qa(number_1, number_2)
+        if is_equal(answer, gcd, right_msg='Correct!'):
             count += 1
         else:
-            error_output(answer, gcd)
             break
-    if count == 3:
-        print('Congratulations!')
+    is_equal(count, 3, right_msg='Congratulations!',
+             wrong_handler=False)

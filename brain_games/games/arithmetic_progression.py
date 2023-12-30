@@ -1,6 +1,7 @@
 from random import randint
-from brain_games.shared.error_output import main as error_output
 from brain_games.shared.gen_numbers import main as gen_numbers
+from brain_games.shared.is_equal import main as is_equal
+from brain_games.shared.qa import main as qa
 
 
 def get_progression(progression_len):
@@ -37,13 +38,10 @@ def game():
         progression, number_for_cut \
             = cut_progression_number(progression, position_for_cut)
         progression = turn_progression_to_str(progression)
-        print(f'Question: {progression}')
-        answer = int(input('Your answer: '))
-        if answer == number_for_cut:
-            print('Correct!')
+        answer = qa(progression)
+        if is_equal(answer, number_for_cut, right_msg='Correct!'):
             count += 1
         else:
-            error_output(answer, number_for_cut)
             break
-    if count == 3:
-        print('Congratulations!')
+    is_equal(count, 3, right_msg='Congratulations!',
+             wrong_handler=False)

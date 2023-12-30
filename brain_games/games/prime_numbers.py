@@ -1,5 +1,7 @@
-from brain_games.shared.error_handler import main as error_handler
 from brain_games.shared.gen_numbers import main as gen_numbers
+from brain_games.shared.is_equal import main as is_equal
+from brain_games.shared.qa import main as qa
+from brain_games.shared.is_comparable import main as is_comparable
 
 
 def is_prime(number):
@@ -22,14 +24,9 @@ def game():
     while count < 3:
         number, _ = gen_numbers()
         prime_status = is_prime(number)
-        print(f'Question: {number}')
-        answer = input('Your answer: ')
-        if prime_status is True and answer == 'yes' or \
-           prime_status is False and answer == 'no':
-            print('Correct!')
+        answer = qa(number, word_answer=True)
+        if is_comparable(answer, prime_status, right_msg='Correct!'):
             count += 1
         else:
-            error_handler(answer, prime_status)
             break
-    if count == 3:
-        print('Congratulations!')
+    is_equal(count, 3, 'Congratulations!', False)
