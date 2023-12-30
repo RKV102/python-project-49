@@ -19,7 +19,7 @@ def calculation(number_1, math_sign, number_2):
     return calculation_result
 
 
-def game(name):
+def game():
     count = 0
     print('What is the result of the expression?')
     while count < 3:
@@ -32,7 +32,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_output(answer, math_result, name)
+            error_output(answer, math_result)
             break
     if count == 3:
-        print(f'Congratulations, {name}!')
+        print('Congratulations!')

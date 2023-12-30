@@ -27,7 +27,7 @@ def turn_progression_to_str(input_progression):
     return progression
 
 
-def game(name):
+def game():
     progression_len = 10
     count = 0
     print('What number is missing in the progression?')
@@ -43,7 +43,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_output(answer, number_for_cut, name)
+            error_output(answer, number_for_cut)
             break
     if count == 3:
-        print(f'Congratulations, {name}!')
+        print('Congratulations!')

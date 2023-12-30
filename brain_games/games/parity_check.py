@@ -9,7 +9,7 @@ def is_even(input):
     return False
 
 
-def game(name):
+def game():
     count = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while count < 3:
@@ -22,7 +22,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_handler(answer, rand_int_parity, name)
+            error_handler(answer, rand_int_parity)
             break
     if count == 3:
-        print(f'Congratulations, {name}!')
+        print('Congratulations!')

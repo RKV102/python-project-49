@@ -16,7 +16,7 @@ def is_prime(number):
     return True
 
 
-def game(name):
+def game():
     count = 0
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while count < 3:
@@ -29,7 +29,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_handler(answer, prime_status, name)
+            error_handler(answer, prime_status)
             break
     if count == 3:
-        print(f'Congratulations, {name}!')
+        print('Congratulations!')

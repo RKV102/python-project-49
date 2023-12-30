@@ -21,7 +21,7 @@ def get_min_number(number_1, number_2):
     return min_number
 
 
-def game(name):
+def game():
     count = 0
     print('Find the greatest common divisor of given numbers.')
     while count < 3:
@@ -33,7 +33,7 @@ def game(name):
             print('Correct!')
             count += 1
         else:
-            error_output(answer, gcd, name)
+            error_output(answer, gcd)
             break
     if count == 3:
-        print(f'Congratulations, {name}!')
+        print('Congratulations!')
