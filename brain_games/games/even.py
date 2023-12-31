@@ -58,8 +58,8 @@ def check_answer(right_answer, user_answer, count):
         print('Correct!')
         count += 1
     else:
-        print(f'"{user_answer}" is wrong answer ;(. ' +
-              f'Correct answer was "{right_answer}"')
+        print(f"'{user_answer}' is wrong answer ;(. " +
+              f"Correct answer was '{right_answer}'")
         count = 4
     return count
 
