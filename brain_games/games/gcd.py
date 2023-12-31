@@ -29,6 +29,7 @@ def det_answer(iterable):
     num_2 = get_second_num(iterable)
     min_num = get_min_num(num_1, num_2)
     i = 1
+    gcd = 1
     while i <= min_num:
         if num_1 % i == 0 and \
            num_2 % i == 0:
