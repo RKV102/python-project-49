@@ -1,9 +1,7 @@
-from brain_games.games.arithmetic_progression import game
-from brain_games.shared.greeting import main as greeting
+from brain_games.games.progression import game
 
 
 def main():
-    greeting()
     game()
 
 

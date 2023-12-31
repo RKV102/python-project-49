@@ -1,9 +1,7 @@
-from brain_games.games.greatest_common_divisor import game
-from brain_games.shared.greeting import main as greeting
+from brain_games.games.gcd import game
 
 
 def main():
-    greeting()
     game()
 
 

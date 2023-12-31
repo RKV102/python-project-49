@@ -1,9 +1,7 @@
-from brain_games.games.calculator import game
-from brain_games.shared.greeting import main as greeting
+from brain_games.games.calc import game
 
 
 def main():
-    greeting()
     game()
 
 
