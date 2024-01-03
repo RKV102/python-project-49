@@ -37,5 +37,6 @@ def game_init(game_name):
     elif game_name == 'prime':
         descr = 'Answer "yes" if given number is prime. Otherwise answer "no".'
         det_answer = det_answer_prime
-    game(give_question, det_answer, get_answer, check_answer,
-         check_count, descr, num_answer, progr_len)
+    game(descr, num_answer, progr_len, give_question=give_question,
+         det_answer=det_answer, get_answer=get_answer,
+         check_answer=check_answer, check_count=check_count)

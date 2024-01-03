@@ -16,8 +16,16 @@ def det_answer(value):
     return 'no'
 
 
-def qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name, num_answer, progr_len):
+def get_func(func_name, func_set):
+    return func_set[func_name]
+
+
+def qa(user_name, num_answer, progr_len, **kwargs):
+    give_question = get_func('give_question', kwargs)
+    det_answer = get_func('det_answer', kwargs)
+    get_answer = get_func('get_answer', kwargs)
+    check_answer = get_func('check_answer', kwargs)
+    check_count = get_func('check_count', kwargs)
     count = 0
     while count < 3:
         question_hint = give_question(progr_len)
@@ -71,9 +79,7 @@ def check_count(count, user_name):
         print(f"Let's try again, {user_name}!")
 
 
-def game(give_question, det_answer, get_answer, check_answer,
-         check_count, descr, num_answer, progr_len):
+def game(descr, num_answer, progr_len, **kwargs):
     user_name = greeting()
     print(descr)
-    qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name, num_answer, progr_len)
+    qa(user_name, num_answer, progr_len, **kwargs)
