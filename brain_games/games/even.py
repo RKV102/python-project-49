@@ -72,7 +72,7 @@ def check_count(count, user_name):
 
 
 def game(give_question, det_answer, get_answer, check_answer,
-         check_count, descr, num_answer=False, progr_len=None):
+         check_count, descr, num_answer, progr_len):
     user_name = greeting()
     print(descr)
     qa(give_question, det_answer, get_answer, check_answer,

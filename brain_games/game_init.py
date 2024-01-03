@@ -12,23 +12,30 @@ from brain_games.games.prime import det_answer as det_answer_prime
 
 
 def game_init(game_name):
+    num_answer = False
+    progr_len = None
+    give_question = give_question_even
+    det_answer = det_answer_even
     if game_name == 'even':
         descr = 'Answer "yes" if the number is even, otherwise answer "no".'
-        game(give_question_even, det_answer_even, get_answer, check_answer,
-             check_count, descr)
     elif game_name == 'calc':
         descr = 'What is the result of the expression?'
-        game(give_question_calc, det_answer_calc, get_answer, check_answer,
-             check_count, descr, num_answer=True)
+        num_answer = True
+        give_question = give_question_calc
+        det_answer = det_answer_calc
     elif game_name == 'gcd':
         descr = 'Find the greatest common divisor of given numbers.'
-        game(give_question_gcd, det_answer_gcd, get_answer, check_answer,
-             check_count, descr, num_answer=True)
+        num_answer = True
+        give_question = give_question_gcd
+        det_answer = det_answer_gcd
     elif game_name == 'progr':
         descr = 'What number is missing in the progression?'
-        game(give_question_progr, det_answer_progr, get_answer, check_answer,
-             check_count, descr, num_answer=True, progr_len=10)
+        num_answer = True
+        progr_len = 10
+        give_question = give_question_progr
+        det_answer = det_answer_progr
     elif game_name == 'prime':
         descr = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-        game(give_question_even, det_answer_prime, get_answer, check_answer,
-             check_count, descr)
+        det_answer = det_answer_prime
+    game(give_question, det_answer, get_answer, check_answer,
+         check_count, descr, num_answer, progr_len)
