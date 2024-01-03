@@ -1,8 +1,8 @@
-from brain_games.games.prime import game
+from brain_games.game_init import game_init
 
 
 def main():
-    game()
+    game_init('prime')
 
 
 if __name__ == '__main__':

@@ -1,5 +1,4 @@
-from brain_games.games.even import greeting, qa, get_answer, gen_numbers
-from brain_games.games.even import check_answer, check_count
+from brain_games.games.even import gen_numbers
 
 
 def give_question(_):
@@ -36,10 +35,3 @@ def det_answer(iterable):
             gcd = i
         i += 1
     return gcd
-
-
-def game():
-    user_name = greeting()
-    print('Find the greatest common divisor of given numbers.')
-    qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name, num_answer=True)

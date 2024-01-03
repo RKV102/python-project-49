@@ -17,7 +17,7 @@ def det_answer(value):
 
 
 def qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name, num_answer=False, progr_len=None):
+       check_count, user_name, num_answer, progr_len):
     count = 0
     while count < 3:
         question_hint = give_question(progr_len)
@@ -71,8 +71,9 @@ def check_count(count, user_name):
         print(f"Let's try again, {user_name}!")
 
 
-def game():
+def game(give_question, det_answer, get_answer, check_answer,
+         check_count, descr, num_answer=False, progr_len=None):
     user_name = greeting()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print(descr)
     qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name)
+       check_count, user_name, num_answer, progr_len)

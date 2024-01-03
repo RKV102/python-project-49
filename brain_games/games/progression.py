@@ -1,5 +1,4 @@
-from brain_games.games.even import greeting, qa, get_answer, gen_numbers
-from brain_games.games.even import check_answer, check_count
+from brain_games.games.even import gen_numbers
 from random import choice
 
 
@@ -45,11 +44,3 @@ def give_question(progr_len):
 
 def det_answer(question_hint):
     return question_hint
-
-
-def game():
-    progr_len = 10
-    user_name = greeting()
-    print('What number is missing in the progression?')
-    qa(give_question, det_answer, get_answer, check_answer,
-       check_count, user_name, num_answer=True, progr_len=progr_len)
