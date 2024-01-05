@@ -2,13 +2,6 @@ from prompt import string
 from random import randint
 
 
-def greeting():
-    print('Welcome to the Brain Games!')
-    user_name = string('May I have your name? ')
-    print(f'Hello, {user_name}!')
-    return user_name
-
-
 def det_answer(value):
     value_mod = value % 2
     if value_mod == 0:
