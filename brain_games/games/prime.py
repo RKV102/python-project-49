@@ -1,3 +1,6 @@
+from brain_games.even import give_question, get_answer, check_answer
+
+
 DESCR = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 NUM_ANSWER = False
 PROGR_LEN = None
@@ -13,3 +16,8 @@ def det_answer(value):
             return 'no'
         i += 1
     return 'yes'
+
+
+give_question = give_question
+get_answer = get_answer
+check_answer = check_answer

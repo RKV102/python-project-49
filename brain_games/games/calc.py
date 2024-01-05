@@ -1,4 +1,4 @@
-from brain_games.games.even import gen_numbers
+from brain_games.games.even import gen_numbers, get_answer, check_answer
 from random import choice
 
 
@@ -33,3 +33,7 @@ def get_numbers(iterable):
 
 def get_sign(iterable):
     return iterable[1]
+
+
+get_answer = get_answer
+check_answer = check_answer

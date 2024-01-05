@@ -1,4 +1,4 @@
-from brain_games.games.even import gen_numbers
+from brain_games.games.even import gen_numbers, get_answer, check_answer
 
 
 DESCR = 'Find the greatest common divisor of given numbers.'
@@ -41,3 +41,7 @@ def det_answer(iterable):
             gcd = i
         i += 1
     return gcd
+
+
+get_answer = get_answer
+check_answer = check_answer
