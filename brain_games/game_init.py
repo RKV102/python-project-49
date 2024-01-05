@@ -1,5 +1,5 @@
-from brain_games.games.even import game, get_answer
-from brain_games.games.even import check_answer, check_count
+from brain_games.game import game
+from brain_games.games.even import get_answer, check_answer
 from brain_games.games.even import give_question as give_question_even
 from brain_games.games.even import det_answer as det_answer_even
 from brain_games.games.calc import give_question as give_question_calc
@@ -39,4 +39,4 @@ def game_init(game_name):
         det_answer = det_answer_prime
     game(descr, num_answer, progr_len, give_question=give_question,
          det_answer=det_answer, get_answer=get_answer,
-         check_answer=check_answer, check_count=check_count)
+         check_answer=check_answer)
