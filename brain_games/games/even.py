@@ -77,9 +77,3 @@ def check_count(count, user_name):
         print(f'Congratulations, {user_name}!')
     else:
         print(f"Let's try again, {user_name}!")
-
-
-def game(descr, num_answer, progr_len, **kwargs):
-    user_name = greeting()
-    print(descr)
-    qa(user_name, num_answer, progr_len, **kwargs)
