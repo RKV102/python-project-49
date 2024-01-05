@@ -1,4 +1,3 @@
-from prompt import string
 from random import randint
 
 
