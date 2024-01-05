@@ -2,6 +2,11 @@ from prompt import string
 from random import randint
 
 
+DESCR = 'Answer "yes" if the number is even, otherwise answer "no".'
+NUM_ANSWER = False
+PROGR_LEN = None
+
+
 def det_answer(value):
     value_mod = value % 2
     if value_mod == 0:

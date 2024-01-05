@@ -2,6 +2,11 @@ from brain_games.games.even import gen_numbers
 from random import choice
 
 
+DESCR = 'What is the result of the expression?'
+NUM_ANSWER = True
+PROGR_LEN = None
+
+
 def give_question(_):
     rand_value_1, rand_value_2 = gen_numbers(2)
     signs = ('+', '-', '*')

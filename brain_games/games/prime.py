@@ -1,3 +1,8 @@
+DESCR = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+NUM_ANSWER = False
+PROGR_LEN = None
+
+
 def det_answer(value):
     i = 2
     if value == 1:

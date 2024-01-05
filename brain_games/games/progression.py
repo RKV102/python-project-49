@@ -2,6 +2,11 @@ from brain_games.games.even import gen_numbers
 from random import choice
 
 
+DESCR = 'What number is missing in the progression?'
+NUM_ANSWER = True
+PROGR_LEN = 10
+
+
 def make_progr(progr_len):
     number, step = gen_numbers(2)
     progr = list()

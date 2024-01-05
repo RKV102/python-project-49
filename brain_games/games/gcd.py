@@ -1,6 +1,11 @@
 from brain_games.games.even import gen_numbers
 
 
+DESCR = 'Find the greatest common divisor of given numbers.'
+NUM_ANSWER = True
+PROGR_LEN = None
+
+
 def give_question(_):
     rand_value_1, rand_value_2 = gen_numbers(2)
     print(f'Question: {rand_value_1} {rand_value_2}')
