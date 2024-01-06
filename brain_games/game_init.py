@@ -1,15 +1,15 @@
 from prompt import string
 
 
-def game_init(game_module):
+def game_init(game):
     user_name = greeting()
-    description = game_module.DESCRIPTION
-    num_answer = game_module.NUM_ANSWER
-    progr_len = game_module.PROGR_LEN
-    give_question = game_module.give_question
-    det_answer = game_module.det_answer
-    get_answer = game_module.get_answer
-    check_answer = game_module.check_answer
+    description = game.DESCRIPTION
+    num_answer = game.NUM_ANSWER
+    progr_len = game.PROGR_LEN
+    give_question = game.give_question
+    det_answer = game.det_answer
+    get_answer = game.get_answer
+    check_answer = game.check_answer
     print(description)
     qa(user_name, num_answer, progr_len,
        give_question=give_question, det_answer=det_answer,
