@@ -42,3 +42,14 @@ def greeting():
     user_name = string('May I have your name? ')
     print(f'Hello, {user_name}!')
     return user_name
+
+
+def check_answer(right_answer, user_answer, count):
+    if right_answer == user_answer:
+        print('Correct!')
+        count += 1
+    else:
+        print(f"'{user_answer}' is wrong answer ;(. "
+              + f"Correct answer was '{right_answer}'.")
+        count = 4
+    return count
