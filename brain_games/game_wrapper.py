@@ -10,10 +10,25 @@ def launch_game(game):
     det_answer = game.det_answer
     get_answer = game.get_answer
     print(description)
-    user_answer, right_answer = qa(user_name, num_answer, progr_len,
-                                   give_question=give_question,
-                                   det_answer=det_answer,
-                                   get_answer=get_answer)
+    count = 0
+    while count < 3:
+        answers = qa(user_name, num_answer, progr_len,
+                     give_question=give_question,
+                     det_answer=det_answer,
+                     get_answer=get_answer)
+        user_answer = get_user_answer(answers)
+        right_answer = get_right_answer(answers)
+        if user_answer == right_answer:
+            print('Correct!')
+            count += 1
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  + f"Correct answer was '{right_answer}'.")
+            count = 4
+        if count != 4:
+            print(f'Congratulations, {user_name}!')
+        else:
+            print(f"Let's try again, {user_name}!")
 
 
 def qa(user_name, num_answer, progr_len, **kwargs):
@@ -46,3 +61,11 @@ def check_answer(right_answer, user_answer, count):
               + f"Correct answer was '{right_answer}'.")
         count = 4
     return count
+
+
+def get_user_answer(answers):
+    return answers[0]
+
+
+def get_right_answer(answers):
+    return answers[1]
