@@ -2,7 +2,7 @@ from brain_games.games.even import gen_numbers, get_answer, check_answer
 from random import choice
 
 
-DESCR = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 NUM_ANSWER = True
 PROGR_LEN = None
 

@@ -3,7 +3,7 @@ from prompt import string
 
 def game_init(game_module):
     user_name = greeting()
-    descr = game_module.DESCR
+    descr = game_module.DESCRIPTION
     num_answer = game_module.NUM_ANSWER
     progr_len = game_module.PROGR_LEN
     give_question = game_module.give_question

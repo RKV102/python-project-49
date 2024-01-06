@@ -1,7 +1,7 @@
 from brain_games.games.even import give_question, get_answer, check_answer
 
 
-DESCR = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 NUM_ANSWER = False
 PROGR_LEN = None
 

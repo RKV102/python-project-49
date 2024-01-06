@@ -1,7 +1,7 @@
 from random import randint
 
 
-DESCR = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 NUM_ANSWER = False
 PROGR_LEN = None
 

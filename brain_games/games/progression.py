@@ -2,7 +2,7 @@ from brain_games.games.even import gen_numbers, get_answer, check_answer
 from random import choice
 
 
-DESCR = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 NUM_ANSWER = True
 PROGR_LEN = 10
 
