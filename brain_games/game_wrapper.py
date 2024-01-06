@@ -10,9 +10,10 @@ def launch_game(game):
     det_answer = game.det_answer
     get_answer = game.get_answer
     print(description)
-    qa(user_name, num_answer, progr_len,
-       give_question=give_question, det_answer=det_answer,
-       get_answer=get_answer)
+    user_answer, right_answer = qa(user_name, num_answer, progr_len,
+                                   give_question=give_question,
+                                   det_answer=det_answer,
+                                   get_answer=get_answer)
 
 
 def qa(user_name, num_answer, progr_len, **kwargs):
@@ -28,6 +29,7 @@ def qa(user_name, num_answer, progr_len, **kwargs):
         print(f'Congratulations, {user_name}!')
     else:
         print(f"Let's try again, {user_name}!")
+    return user_answer
 
 
 def get_func(func_name, func_set):
