@@ -1,4 +1,4 @@
-from brain_games.game_init import launch_game
+from brain_games.game_wrapper import launch_game
 from brain_games.games import even
 
 
