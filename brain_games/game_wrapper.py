@@ -38,7 +38,7 @@ def qa(user_name, num_answer, progr_len, **kwargs):
     question_hint = give_question(progr_len)
     right_answer = det_answer(question_hint)
     user_answer = get_answer(num_answer)
-    return user_answer
+    return user_answer, right_answer
 
 
 def get_func(func_name, func_set):
