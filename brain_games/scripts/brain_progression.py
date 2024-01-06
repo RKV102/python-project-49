@@ -1,9 +1,9 @@
-from brain_games.game_wrapper import launch_game
+from brain_games.game_wrapper import game_wrapper
 from brain_games.games import progression
 
 
 def main():
-    launch_game(progression)
+    game_wrapper(progression)
 
 
 if __name__ == '__main__':

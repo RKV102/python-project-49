@@ -1,9 +1,9 @@
-from brain_games.game_wrapper import launch_game
+from brain_games.game_wrapper import game_wrapper
 from brain_games.games import prime
 
 
 def main():
-    launch_game(prime)
+    game_wrapper(prime)
 
 
 if __name__ == '__main__':
