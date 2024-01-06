@@ -1,7 +1,7 @@
 from prompt import string
 
 
-def game_init(game):
+def launch_game(game):
     user_name = greeting()
     description = game.DESCRIPTION
     num_answer = game.NUM_ANSWER
