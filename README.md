@@ -10,7 +10,7 @@
 ## Статус непрерывной интеграции
 
 [![hexlet-check](https://github.com/RKV102/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RKV102/python-project-49/actions/workflows/hexlet-check.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/57d691d5af0ea00f9fca/maintainability)](https://codeclimate.com/github/LaWorp/python-project-49/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1ec127b1755b622208ef/maintainability)](https://codeclimate.com/github/RKV102/python-project-49/maintainability)
 
 ## Правила игры
 
