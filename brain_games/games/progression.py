@@ -52,4 +52,3 @@ def det_answer(question_hint):
 
 
 get_answer = get_answer
-check_answer = check_answer

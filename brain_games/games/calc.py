@@ -36,4 +36,3 @@ def get_sign(iterable):
 
 
 get_answer = get_answer
-check_answer = check_answer

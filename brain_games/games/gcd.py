@@ -44,4 +44,3 @@ def det_answer(iterable):
 
 
 get_answer = get_answer
-check_answer = check_answer

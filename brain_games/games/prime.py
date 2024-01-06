@@ -20,4 +20,3 @@ def det_answer(value):
 
 give_question = give_question
 get_answer = get_answer
-check_answer = check_answer
