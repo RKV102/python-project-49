@@ -1,4 +1,4 @@
-from brain_games.games.even import give_question, get_answer, check_answer
+from brain_games.games.even import give_question, get_answer
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'

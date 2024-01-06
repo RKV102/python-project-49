@@ -1,4 +1,4 @@
-from brain_games.games.even import gen_numbers, get_answer, check_answer
+from brain_games.games.even import gen_numbers, get_answer
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
