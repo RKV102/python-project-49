@@ -12,12 +12,9 @@ def game_wrapper(game):
     print(description)
     count = 0
     while count < 3:
-        answers = qa(user_name, num_answer, progr_len,
-                     give_question=give_question,
-                     det_answer=det_answer,
-                     get_answer=get_answer)
-        user_answer = get_user_answer(answers)
-        right_answer = get_right_answer(answers)
+        question_hint = give_question(progr_len)
+        right_answer = det_answer(question_hint)
+        user_answer = get_answer(num_answer)
         if user_answer == right_answer:
             print('Correct!')
             count += 1
@@ -29,16 +26,6 @@ def game_wrapper(game):
             print(f'Congratulations, {user_name}!')
         else:
             print(f"Let's try again, {user_name}!")
-
-
-def qa(user_name, num_answer, progr_len, **kwargs):
-    give_question = get_func('give_question', kwargs)
-    det_answer = get_func('det_answer', kwargs)
-    get_answer = get_func('get_answer', kwargs)
-    question_hint = give_question(progr_len)
-    right_answer = det_answer(question_hint)
-    user_answer = get_answer(num_answer)
-    return user_answer, right_answer
 
 
 def get_func(func_name, func_set):
