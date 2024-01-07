@@ -5,7 +5,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 PROGR_LEN = 10
 
 
-def make_progr(progr_len):
+def create_progr(progr_len):
     number = randint(0, 100)
     step = randint(0, 100)
     progr = list()
@@ -40,7 +40,7 @@ def set_item(iterable, pos, new_value):
 
 
 def give_question(progr_len, start_msg):
-    progr = make_progr(progr_len)
+    progr = create_progr(progr_len)
     question_hint = hide_progr(progr, progr_len)
     show_progr(progr, start_msg)
     return question_hint
