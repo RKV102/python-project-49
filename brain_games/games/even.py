@@ -34,8 +34,6 @@ def give_question(_, start_msg):
 
 def get_answer(num_answer):
     answer = input('Your answer: ')
-    if num_answer is True:
-        return int(answer)
     return answer
 
 
