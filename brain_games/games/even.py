@@ -39,4 +39,7 @@ def get_answer(num_answer):
     return answer
 
 
-det_answer = is_answer
+def det_answer(question_hint, is_answer):
+    if is_answer(question_hint) is True:
+        return 'yes'
+    return 'no'
