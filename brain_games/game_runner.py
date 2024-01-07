@@ -15,7 +15,7 @@ def game_runner(game):
     print(description)
     count = 0
     while count < 3:
-        question_hint = give_question(progr_len)
+        question_hint = give_question(progr_len, 'Question:')
         right_answer = det_answer(question_hint, is_answer)
         user_answer = get_answer(num_answer)
         if user_answer == right_answer:
