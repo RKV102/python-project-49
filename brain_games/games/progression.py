@@ -40,10 +40,10 @@ def set_item(iterable, pos, new_value):
     iterable[pos] = new_value
 
 
-def give_question(progr_len):
+def give_question(progr_len, start_msg):
     progr = make_progr(progr_len)
     question_hint = hide_progr(progr, progr_len)
-    show_progr(progr)
+    show_progr(progr, start_msg)
     return question_hint
 
 

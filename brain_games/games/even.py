@@ -26,7 +26,7 @@ def gen_numbers(count):
     return rand_values
 
 
-def give_question(_):
+def give_question(_, start_msg):
     rand_value = gen_numbers(1)
     print(f'Question: {rand_value}')
     return rand_value

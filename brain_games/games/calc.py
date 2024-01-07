@@ -7,7 +7,7 @@ NUM_ANSWER = True
 PROGR_LEN = None
 
 
-def give_question(_):
+def give_question(_, start_msg):
     rand_value_1, rand_value_2 = gen_numbers(2)
     signs = ('+', '-', '*')
     chosen_sign = choice(signs)
