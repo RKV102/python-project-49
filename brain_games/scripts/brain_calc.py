@@ -1,9 +1,9 @@
-from brain_games.game_wrapper import game_wrapper
+from brain_games.game_runner import game_runner
 from brain_games.games import calc
 
 
 def main():
-    game_wrapper(calc)
+    game_runner(calc)
 
 
 if __name__ == '__main__':
