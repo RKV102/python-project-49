@@ -12,19 +12,16 @@ def game_runner(game):
     det_answer = game.det_answer
     get_answer = game.get_answer
     print(description)
-    count = 0
-    while count < 3:
+    for i in range(3):
         question_hint = give_question(progr_len, 'Question:')
         right_answer = det_answer(question_hint, is_answer)
         user_answer = get_answer()
         if user_answer == right_answer:
             print('Correct!')
-            count += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   + f"Correct answer was '{right_answer}'.")
-            count = 4
-        if count != 4:
-            print(f'Congratulations, {user_name}!')
-        else:
             print(f"Let's try again, {user_name}!")
+            break
+    else:
+        print(f'Congratulations, {user_name}!')
