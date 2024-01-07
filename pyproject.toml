@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.1"
-description = ""
+description = "The project provides the opportunity to play one of five games: parity check, calculator, the greatest common divisor, arithmetic progression, is a prime number?"
 authors = ["LaWorp <laworp@yandex.ru>"]
 readme = "README.md"
 packages = [
