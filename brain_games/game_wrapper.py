@@ -28,11 +28,3 @@ def game_wrapper(game):
             print(f'Congratulations, {user_name}!')
         else:
             print(f"Let's try again, {user_name}!")
-
-
-def get_user_answer(answers):
-    return answers[0]
-
-
-def get_right_answer(answers):
-    return answers[1]
