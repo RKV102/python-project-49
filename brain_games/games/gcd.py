@@ -40,7 +40,7 @@ def det_answer(iterable, _):
            num_2 % i == 0:
             gcd = i
         i += 1
-    return gcd
+    return str(gcd)
 
 
 get_answer = get_answer

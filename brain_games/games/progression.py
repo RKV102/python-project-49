@@ -48,7 +48,7 @@ def give_question(progr_len, start_msg):
 
 
 def det_answer(question_hint, _):
-    return question_hint
+    return str(question_hint)
 
 
 get_answer = get_answer

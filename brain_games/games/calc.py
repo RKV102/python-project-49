@@ -24,7 +24,7 @@ def det_answer(iterable, _):
         result = num_1 - num_2
     else:
         result = num_1 * num_2
-    return result
+    return str(result)
 
 
 def get_numbers(iterable):
