@@ -28,10 +28,6 @@ def game_wrapper(game):
             print(f"Let's try again, {user_name}!")
 
 
-def get_func(func_name, func_set):
-    return func_set[func_name]
-
-
 def greeting():
     print('Welcome to the Brain Games!')
     user_name = string('May I have your name? ')
