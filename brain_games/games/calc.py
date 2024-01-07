@@ -15,7 +15,7 @@ def give_question(_):
     return rand_value_1, chosen_sign, rand_value_2
 
 
-def det_answer(iterable):
+def det_answer(iterable, _):
     num_1, num_2 = get_numbers(iterable)
     sign = get_sign(iterable)
     if sign == '+':
@@ -36,3 +36,4 @@ def get_sign(iterable):
 
 
 get_answer = get_answer
+is_answer = None

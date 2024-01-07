@@ -47,8 +47,9 @@ def give_question(progr_len):
     return question_hint
 
 
-def det_answer(question_hint):
+def det_answer(question_hint, _):
     return question_hint
 
 
 get_answer = get_answer
+is_answer = None

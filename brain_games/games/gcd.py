@@ -30,7 +30,7 @@ def get_second_num(iterable):
     return iterable[1]
 
 
-def det_answer(iterable):
+def det_answer(iterable, _):
     num_1 = get_first_num(iterable)
     num_2 = get_second_num(iterable)
     min_num, gcd = get_min_max_num(num_1, num_2)
@@ -44,3 +44,4 @@ def det_answer(iterable):
 
 
 get_answer = get_answer
+is_answer = None
