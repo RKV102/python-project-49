@@ -10,12 +10,11 @@ def game_runner(game):
     progr_len = game.PROGR_LEN
     give_question = game.give_question
     det_answer = game.det_answer
-    get_answer = game.get_answer
     print(description)
     for i in range(3):
         question_hint = give_question(progr_len, 'Question:')
         right_answer = det_answer(question_hint, is_answer)
-        user_answer = get_answer()
+        user_answer = input('Your answer: ')
         if user_answer == right_answer:
             print('Correct!')
         else:

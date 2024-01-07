@@ -1,4 +1,3 @@
-from brain_games.games.even import get_answer
 from random import choice, randint
 
 
@@ -51,5 +50,4 @@ def det_answer(question_hint, _):
     return str(question_hint)
 
 
-get_answer = get_answer
 is_answer = None

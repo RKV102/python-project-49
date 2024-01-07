@@ -18,11 +18,6 @@ def give_question(_, start_msg):
     return rand_value
 
 
-def get_answer():
-    answer = input('Your answer: ')
-    return answer
-
-
 def det_answer(question_hint, is_answer):
     if is_answer(question_hint) is True:
         return 'yes'

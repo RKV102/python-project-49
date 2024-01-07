@@ -1,4 +1,3 @@
-from brain_games.games.even import get_answer
 from random import choice, randint
 
 
@@ -35,5 +34,4 @@ def get_sign(iterable):
     return iterable[1]
 
 
-get_answer = get_answer
 is_answer = None

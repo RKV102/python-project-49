@@ -1,4 +1,3 @@
-from brain_games.games.even import get_answer
 from random import randint
 
 
@@ -44,5 +43,4 @@ def det_answer(iterable, _):
     return str(gcd)
 
 
-get_answer = get_answer
 is_answer = None
