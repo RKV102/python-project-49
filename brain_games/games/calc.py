@@ -15,7 +15,8 @@ def give_question(_, start_msg):
 
 
 def det_answer(iterable, _):
-    num_1, num_2 = get_numbers(iterable)
+    num_1 = get_first_num(iterable)
+    num_2 = get_second_num(iterable)
     sign = get_sign(iterable)
     if sign == '+':
         result = num_1 + num_2
@@ -26,8 +27,12 @@ def det_answer(iterable, _):
     return str(result)
 
 
-def get_numbers(iterable):
-    return iterable[0], iterable[2]
+def get_first_num(iterable):
+    return iterable[0]
+
+
+def get_second_num(iterable):
+    return iterable[2]
 
 
 def get_sign(iterable):
