@@ -18,5 +18,6 @@ def is_answer(value):
     return True
 
 
+det_answer = is_answer
 give_question = give_question
 get_answer = get_answer

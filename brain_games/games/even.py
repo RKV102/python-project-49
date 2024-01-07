@@ -37,3 +37,6 @@ def get_answer(num_answer):
     if num_answer is True:
         return int(answer)
     return answer
+
+
+det_answer = is_answer
