@@ -2,7 +2,6 @@ from random import randint
 
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
-NUM_ANSWER = False
 PROGR_LEN = None
 
 
@@ -32,7 +31,7 @@ def give_question(_, start_msg):
     return rand_value
 
 
-def get_answer(num_answer):
+def get_answer():
     answer = input('Your answer: ')
     return answer
 

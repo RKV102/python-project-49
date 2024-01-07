@@ -3,7 +3,6 @@ from random import choice
 
 
 DESCRIPTION = 'What is the result of the expression?'
-NUM_ANSWER = True
 PROGR_LEN = None
 
 

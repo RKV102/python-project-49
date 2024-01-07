@@ -2,7 +2,6 @@ from brain_games.games.even import gen_numbers, get_answer
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
-NUM_ANSWER = True
 PROGR_LEN = None
 
 

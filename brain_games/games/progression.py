@@ -3,7 +3,6 @@ from random import choice
 
 
 DESCRIPTION = 'What number is missing in the progression?'
-NUM_ANSWER = True
 PROGR_LEN = 10
 
 

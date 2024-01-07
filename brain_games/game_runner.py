@@ -6,7 +6,6 @@ def game_runner(game):
     user_name = string('May I have your name? ')
     print(f'Hello, {user_name}!')
     description = game.DESCRIPTION
-    num_answer = game.NUM_ANSWER
     is_answer = game.is_answer
     progr_len = game.PROGR_LEN
     give_question = game.give_question
@@ -17,7 +16,7 @@ def game_runner(game):
     while count < 3:
         question_hint = give_question(progr_len, 'Question:')
         right_answer = det_answer(question_hint, is_answer)
-        user_answer = get_answer(num_answer)
+        user_answer = get_answer()
         if user_answer == right_answer:
             print('Correct!')
             count += 1
