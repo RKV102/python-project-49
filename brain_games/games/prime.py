@@ -6,16 +6,16 @@ NUM_ANSWER = False
 PROGR_LEN = None
 
 
-def det_answer(value):
+def is_answer(value):
     i = 2
     if value == 1:
-        return 'no'
+        return False
     while i < value:
         value_mod = value % i
         if value_mod == 0:
-            return 'no'
+            return False
         i += 1
-    return 'yes'
+    return True
 
 
 give_question = give_question

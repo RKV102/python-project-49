@@ -6,11 +6,11 @@ NUM_ANSWER = False
 PROGR_LEN = None
 
 
-def det_answer(value):
+def is_answer(value):
     value_mod = value % 2
     if value_mod == 0:
-        return 'yes'
-    return 'no'
+        return True
+    return False
 
 
 def gen_numbers(count):
