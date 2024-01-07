@@ -1,4 +1,5 @@
-from brain_games.games.even import gen_numbers, get_answer
+from brain_games.games.even import get_answer
+from random import randint
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
@@ -6,7 +7,8 @@ PROGR_LEN = None
 
 
 def give_question(_, start_msg):
-    rand_value_1, rand_value_2 = gen_numbers(2)
+    rand_value_1 = randint(0, 100)
+    rand_value_2 = randint(0, 100)
     print(f'{start_msg} {rand_value_1} {rand_value_2}')
     return rand_value_1, rand_value_2
 

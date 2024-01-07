@@ -12,21 +12,8 @@ def is_answer(value):
     return False
 
 
-def gen_numbers(count):
-    if count == 1:
-        rand_value = randint(0, 100)
-        return rand_value
-    rand_values = []
-    i = 0
-    while i < count:
-        rand_value = randint(0, 100)
-        rand_values.append(rand_value)
-        i += 1
-    return rand_values
-
-
 def give_question(_, start_msg):
-    rand_value = gen_numbers(1)
+    rand_value = randint(0, 100)
     print(f'{start_msg} {rand_value}')
     return rand_value
 

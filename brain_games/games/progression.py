@@ -1,5 +1,5 @@
-from brain_games.games.even import gen_numbers, get_answer
-from random import choice
+from brain_games.games.even import get_answer
+from random import choice, randint
 
 
 DESCRIPTION = 'What number is missing in the progression?'
@@ -7,7 +7,8 @@ PROGR_LEN = 10
 
 
 def make_progr(progr_len):
-    number, step = gen_numbers(2)
+    number = randint(0, 100)
+    step = randint(0, 100)
     progr = list()
     i = 0
     while i < progr_len:

@@ -1,5 +1,5 @@
-from brain_games.games.even import gen_numbers, get_answer
-from random import choice
+from brain_games.games.even import get_answer
+from random import choice, randint
 
 
 DESCRIPTION = 'What is the result of the expression?'
@@ -7,7 +7,8 @@ PROGR_LEN = None
 
 
 def give_question(_, start_msg):
-    rand_value_1, rand_value_2 = gen_numbers(2)
+    rand_value_1 = randint(0, 100)
+    rand_value_2 = randint(0, 100)
     signs = ('+', '-', '*')
     chosen_sign = choice(signs)
     print(f'{start_msg} {rand_value_1} {chosen_sign} {rand_value_2}')
