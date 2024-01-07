@@ -11,7 +11,7 @@ def give_question(_, start_msg):
     rand_value_1, rand_value_2 = gen_numbers(2)
     signs = ('+', '-', '*')
     chosen_sign = choice(signs)
-    print(f'Question: {rand_value_1} {chosen_sign} {rand_value_2}')
+    print(f'{start_msg} {rand_value_1} {chosen_sign} {rand_value_2}')
     return rand_value_1, chosen_sign, rand_value_2
 
 

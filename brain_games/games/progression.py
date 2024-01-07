@@ -25,10 +25,9 @@ def hide_progr(progr, progr_len):
     return hide_item
 
 
-def show_progr(progr):
-    question = 'Question:'
+def show_progr(progr, start_msg):
     for item in progr:
-        question = f'{question} {item}'
+        question = f'{start_msg} {item}'
     print(question)
 
 
