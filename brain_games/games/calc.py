@@ -18,12 +18,13 @@ def det_answer(iterable, _):
     num_1 = get_first_num(iterable)
     num_2 = get_second_num(iterable)
     sign = get_sign(iterable)
-    if sign == '+':
-        result = num_1 + num_2
-    elif sign == '-':
-        result = num_1 - num_2
-    else:
-        result = num_1 * num_2
+    match sign:
+        case '+':
+            result = num_1 + num_2
+        case '-':
+            result = num_1 - num_2
+        case _:
+            result = num_1 * num_2
     return str(result)
 
 
