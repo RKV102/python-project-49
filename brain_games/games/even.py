@@ -19,6 +19,6 @@ def give_question(_, start_msg):
 
 
 def det_answer(question_hint, is_answer):
-    if is_answer(question_hint) is True:
+    if is_answer(question_hint):
         return 'yes'
     return 'no'
