@@ -2,7 +2,9 @@ from prompt import string
 
 
 def game_wrapper(game):
-    user_name = greeting()
+    print('Welcome to the Brain Games!')
+    user_name = string('May I have your name? ')
+    print(f'Hello, {user_name}!')
     description = game.DESCRIPTION
     num_answer = game.NUM_ANSWER
     progr_len = game.PROGR_LEN
@@ -26,13 +28,6 @@ def game_wrapper(game):
             print(f'Congratulations, {user_name}!')
         else:
             print(f"Let's try again, {user_name}!")
-
-
-def greeting():
-    print('Welcome to the Brain Games!')
-    user_name = string('May I have your name? ')
-    print(f'Hello, {user_name}!')
-    return user_name
 
 
 def get_user_answer(answers):
