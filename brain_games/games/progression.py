@@ -19,8 +19,8 @@ def create_progr():
 
 def hide_progr(progr):
     hide_pos = choice(range(PROGR_LEN))
-    hide_item = get_item(progr, hide_pos)
-    set_item(progr, hide_pos, '..')
+    hide_item = progr[hide_pos]
+    progr[hide_pos] = '..'
     return hide_item
 
 
@@ -29,14 +29,6 @@ def show_progr(progr, start_msg):
     for item in progr:
         msg = f'{msg} {item}'
     print(msg)
-
-
-def get_item(iterable, pos):
-    return iterable[pos]
-
-
-def set_item(iterable, pos, new_value):
-    iterable[pos] = new_value
 
 
 def give_question(start_msg):
