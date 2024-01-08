@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_answer(value):
+def is_even(value):
     value_mod = value % 2
     if value_mod == 0:
         return True
@@ -23,4 +23,4 @@ def det_answer(question_hint, predicate):
     return 'no'
 
 
-predicate = is_answer
+predicate = is_even
