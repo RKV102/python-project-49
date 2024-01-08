@@ -23,7 +23,7 @@ def hide_progr(progr):
     return hide_item, new_progr
 
 
-def show_progr(new_progr, start_msg):
+def create_question(new_progr, start_msg):
     msg = start_msg
     for item in progr:
         msg = f'{msg} {item}'
@@ -33,7 +33,7 @@ def show_progr(new_progr, start_msg):
 def give_question(start_msg):
     progr = create_progr()
     question_hint, new_progr = hide_progr(progr)
-    show_progr(new_progr, start_msg)
+    create_question(new_progr, start_msg)
     return question_hint
 
 
