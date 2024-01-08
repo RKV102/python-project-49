@@ -4,9 +4,9 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(value):
-    value_mod = value % 2
-    if value_mod == 0:
+def is_even(num):
+    num_mod = num % 2
+    if num_mod == 0:
         return True
     return False
 

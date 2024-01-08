@@ -4,15 +4,14 @@ from brain_games.games.even import give_question, det_answer
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(value):
+def is_prime(num):
     i = 2
-    if value == 0 or value == 1:
+    if num == 0 or num == 1:
         return False
-    while i < value:
-        value_mod = value % i
-        if value_mod == 0:
+    for i in range(2, num):
+        num_mod = num % i
+        if num_mod == 0:
             return False
-        i += 1
     return True
 
 
