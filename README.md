@@ -29,20 +29,20 @@
 ## Примеры
 ### Проверка на чётность
 
-[![asciicast](https://asciinema.org/a/3ikkLgSQrtGoWwmPTtAq08jh3.svg)](https://asciinema.org/a/3ikkLgSQrtGoWwmPTtAq08jh3)
+[![asciicast](https://asciinema.org/a/8dziEWb42xqapFsRPDkzV8abI.svg)](https://asciinema.org/a/8dziEWb42xqapFsRPDkzV8abI)
 
 ### Калькулятор
 
-[![asciicast](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE.svg)](https://asciinema.org/a/CTt3TqjOKLiITGZ57hPjW1iIE)
+[![asciicast](https://asciinema.org/a/x9wYsrSKEJhz8aTVdJYA3noSS.svg)](https://asciinema.org/a/x9wYsrSKEJhz8aTVdJYA3noSS)
 
 ### Наибольший общий делитель
 
-[![asciicast](https://asciinema.org/a/ECWz7Me6uICbwpN9UHsHcTLTv.svg)](https://asciinema.org/a/ECWz7Me6uICbwpN9UHsHcTLTv)
+[![asciicast](https://asciinema.org/a/3qoDPTUhtaLB2eNW3iYEyi1VH.svg)](https://asciinema.org/a/3qoDPTUhtaLB2eNW3iYEyi1VH)
 
 ### Арифметическая прогрессия
 
-[![asciicast](https://asciinema.org/a/Vl2nUGke6hfKRyRxCGPuOvfQo.svg)](https://asciinema.org/a/Vl2nUGke6hfKRyRxCGPuOvfQo)
+[![asciicast](https://asciinema.org/a/3pG3sp4vcuIsfZlHJ5bkjLVMe.svg)](https://asciinema.org/a/3pG3sp4vcuIsfZlHJ5bkjLVMe)
 
 ### Простое ли число?
 
-[![asciicast](https://asciinema.org/a/6lLVuiXn9fNGkuQxQmpL2YsWZ.svg)](https://asciinema.org/a/6lLVuiXn9fNGkuQxQmpL2YsWZ)
+[![asciicast](https://asciinema.org/a/i4VQWBLjIn9YU0aOj33tjbnki.svg)](https://asciinema.org/a/i4VQWBLjIn9YU0aOj33tjbnki)
