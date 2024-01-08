@@ -5,7 +5,7 @@ DESCRIPTION = 'What is the result of the expression?'
 PROGR_LEN = None
 
 
-def give_question(_, start_msg):
+def give_question(start_msg):
     rand_value_1 = randint(0, 100)
     rand_value_2 = randint(0, 100)
     signs = ('+', '-', '*')

@@ -5,7 +5,7 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 PROGR_LEN = None
 
 
-def give_question(_, start_msg):
+def give_question(start_msg):
     rand_value_1 = randint(0, 100)
     rand_value_2 = randint(0, 100)
     print(f'{start_msg} {rand_value_1} {rand_value_2}')

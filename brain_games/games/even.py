@@ -12,7 +12,7 @@ def is_answer(value):
     return False
 
 
-def give_question(_, start_msg):
+def give_question(start_msg):
     rand_value = randint(0, 100)
     print(f'{start_msg} {rand_value}')
     return rand_value

@@ -39,7 +39,7 @@ def set_item(iterable, pos, new_value):
     iterable[pos] = new_value
 
 
-def give_question(progr_len, start_msg):
+def give_question(start_msg):
     progr = create_progr(progr_len)
     question_hint = hide_progr(progr, progr_len)
     show_progr(progr, start_msg)

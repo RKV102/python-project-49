@@ -7,12 +7,11 @@ def run_game(game):
     print(f'Hello, {user_name}!')
     description = game.DESCRIPTION
     is_answer = game.is_answer
-    progr_len = game.PROGR_LEN
     give_question = game.give_question
     det_answer = game.det_answer
     print(description)
     for i in range(3):
-        question_hint = give_question(progr_len, 'Question:')
+        question_hint = give_question('Question:')
         right_answer = det_answer(question_hint, is_answer)
         user_answer = input('Your answer: ')
         if user_answer == right_answer:
