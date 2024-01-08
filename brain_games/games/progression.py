@@ -18,7 +18,7 @@ def create_progr():
 def hide_item_in_progr(progr):
     new_progr = progr[:]
     hide_pos = choice(range(PROGR_LEN))
-    hide_item = progr[hide_pos]
+    hide_item = str(progr[hide_pos])
     new_progr[hide_pos] = '..'
     return hide_item, new_progr
 
