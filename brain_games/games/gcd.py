@@ -21,17 +21,9 @@ def get_min_max_num(num_1, num_2):
     return min_num, max_num
 
 
-def get_first_num(iterable):
-    return iterable[0]
-
-
-def get_second_num(iterable):
-    return iterable[1]
-
-
 def det_answer(iterable, _):
-    num_1 = get_first_num(iterable)
-    num_2 = get_second_num(iterable)
+    num_1 = iterable[0]
+    num_2 = iterable[1]
     min_num, gcd = get_min_max_num(num_1, num_2)
     i = 1
     while i <= min_num:
