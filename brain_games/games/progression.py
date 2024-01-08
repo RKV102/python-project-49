@@ -15,7 +15,7 @@ def create_progr():
     return progr
 
 
-def hide_progr(progr):
+def hide_item_in_progr(progr):
     new_progr = progr[:]
     hide_pos = choice(range(PROGR_LEN))
     hide_item = progr[hide_pos]
@@ -23,22 +23,19 @@ def hide_progr(progr):
     return hide_item, new_progr
 
 
-def create_question(new_progr, start_msg):
-    msg = start_msg
-    for item in progr:
-        msg = f'{msg} {item}'
-    print(msg)
+def create_question(new_progr, start_question):
+    question = start_question
+    for item in new_progr:
+        question = f'{question} {item}'
+    return question
 
 
-def give_question(start_msg):
+def generate_round(start_question, _):
     progr = create_progr()
-    question_hint, new_progr = hide_progr(progr)
-    create_question(new_progr, start_msg)
-    return question_hint
-
-
-def det_answer(question_hint, _):
-    return str(question_hint)
+    hide_item, new_progr = hide_item_in_progr(progr)
+    question = create_question(new_progr, start_question)
+    right_answer = hide_item
+    return question, right_answer
 
 
 predicate = None

@@ -11,16 +11,14 @@ def is_even(value):
     return False
 
 
-def give_question(start_msg):
-    rand_value = randint(0, 100)
-    print(f'{start_msg} {rand_value}')
-    return rand_value
-
-
-def det_answer(question_hint, predicate):
-    if predicate(question_hint):
-        return 'yes'
-    return 'no'
+def generate_round(start_question, predicate):
+    rand_num = randint(0, 100)
+    question = f'{start_question} {rand_num}'
+    if predicate(rand_num) is True:
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
+    return question, right_answer
 
 
 predicate = is_even

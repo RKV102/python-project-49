@@ -4,27 +4,20 @@ from random import choice, randint
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def give_question(start_msg):
-    rand_value_1 = randint(0, 100)
-    rand_value_2 = randint(0, 100)
+def generate_round(start_question, _):
+    rand_num_1 = randint(0, 100)
+    rand_num_2 = randint(0, 100)
     signs = ('+', '-', '*')
     chosen_sign = choice(signs)
-    print(f'{start_msg} {rand_value_1} {chosen_sign} {rand_value_2}')
-    return rand_value_1, chosen_sign, rand_value_2
-
-
-def det_answer(iterable, _):
-    num_1 = iterable[0]
-    num_2 = iterable[2]
-    sign = iterable[1]
-    match sign:
+    question = f'{start_question} {rand_num_1} {chosen_sign} {rand_num_2}'
+    match chosen_sign:
         case '+':
-            result = num_1 + num_2
+            right_answer = str(rand_num_1 + rand_num_2)
         case '-':
-            result = num_1 - num_2
+            right_answer = str(rand_num_1 - rand_num_2)
         case _:
-            result = num_1 * num_2
-    return str(result)
+            right_answer = str(rand_num_1 * rand_num_2)
+    return question, right_answer
 
 
 predicate = None

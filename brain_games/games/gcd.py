@@ -4,29 +4,25 @@ from random import randint
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def give_question(start_msg):
-    rand_value_1 = randint(0, 100)
-    rand_value_2 = randint(0, 100)
-    print(f'{start_msg} {rand_value_1} {rand_value_2}')
-    return rand_value_1, rand_value_2
-
-
-def det_answer(iterable, _):
-    num_1 = iterable[0]
-    num_2 = iterable[1]
-    if num_1 < num_2:
-        min_num = num_1
-        gcd = num_2
-    else:
-        min_num = num_2
-        gcd = num_1
-    i = 1
-    while i <= min_num:
-        if num_1 % i == 0 and \
-           num_2 % i == 0:
+def generate_round(start_question, _):
+    rand_num_1 = randint(0, 100)
+    rand_num_2 = randint(0, 100)
+    question = f'{start_question} {rand_num_1} {rand_num_2}'
+    match rand_num_1 < rand_num_2:
+        case True:
+            min_num = rand_num_1
+        case _:
+            match rand_num_1 > rand_num_2:
+                case True:
+                    min_num = rand_num_2
+                case _:
+                    right_answer = str(rand_num_1)
+                    return question, right_answer
+    for i in range(1, min_num + 1):
+        if rand_num_1 % i == 0 and rand_num_2 % i == 0:
             gcd = i
-        i += 1
-    return str(gcd)
+    right_answer = str(gcd)
+    return question, right_answer
 
 
 predicate = None
