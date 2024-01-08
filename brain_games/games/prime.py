@@ -6,7 +6,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(value):
     i = 2
-    if value == 1:
+    if value == 0 or value == 1:
         return False
     while i < value:
         value_mod = value % i
