@@ -7,12 +7,11 @@ def run_game(game):
     print(f'Hello, {user_name}!')
     description = game.DESCRIPTION
     predicate = game.predicate
-    give_question = game.give_question
-    det_answer = game.det_answer
+    generate_round = game.generate_round
     print(description)
     for i in range(3):
-        question_hint = give_question('Question:')
-        right_answer = det_answer(question_hint, predicate)
+        question, right_answer = generate_round('Question:', predicate)
+        print(question)
         user_answer = input('Your answer: ')
         if user_answer == right_answer:
             print('Correct!')
