@@ -11,20 +11,15 @@ def give_question(start_msg):
     return rand_value_1, rand_value_2
 
 
-def get_min_max_num(num_1, num_2):
-    if num_1 < num_2:
-        min_num = num_1
-        max_num = num_2
-    else:
-        min_num = num_2
-        max_num = num_1
-    return min_num, max_num
-
-
 def det_answer(iterable, _):
     num_1 = iterable[0]
     num_2 = iterable[1]
-    min_num, gcd = get_min_max_num(num_1, num_2)
+    if num_1 < num_2:
+        min_num = num_1
+        gcd = num_2
+    else:
+        min_num = num_2
+        gcd = num_1
     i = 1
     while i <= min_num:
         if num_1 % i == 0 and \
