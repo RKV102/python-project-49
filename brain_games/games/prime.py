@@ -4,7 +4,7 @@ from brain_games.games.even import give_question, det_answer
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_answer(value):
+def is_prime(value):
     i = 2
     if value == 1:
         return False
@@ -18,4 +18,4 @@ def is_answer(value):
 
 give_question = give_question
 det_answer = det_answer
-predicate = is_answer
+predicate = is_prime
