@@ -14,9 +14,9 @@ def give_question(start_msg):
 
 
 def det_answer(iterable, _):
-    num_1 = get_first_num(iterable)
-    num_2 = get_second_num(iterable)
-    sign = get_sign(iterable)
+    num_1 = iterable[0]
+    num_2 = iterable[2]
+    sign = iterable[1]
     match sign:
         case '+':
             result = num_1 + num_2
@@ -25,18 +25,6 @@ def det_answer(iterable, _):
         case _:
             result = num_1 * num_2
     return str(result)
-
-
-def get_first_num(iterable):
-    return iterable[0]
-
-
-def get_second_num(iterable):
-    return iterable[2]
-
-
-def get_sign(iterable):
-    return iterable[1]
 
 
 predicate = None
