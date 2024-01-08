@@ -2,7 +2,6 @@ from random import randint
 
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
-PROGR_LEN = None
 
 
 def is_answer(value):

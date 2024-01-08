@@ -2,7 +2,6 @@ from random import randint
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
-PROGR_LEN = None
 
 
 def give_question(start_msg):

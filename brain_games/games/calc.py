@@ -2,7 +2,6 @@ from random import choice, randint
 
 
 DESCRIPTION = 'What is the result of the expression?'
-PROGR_LEN = None
 
 
 def give_question(start_msg):

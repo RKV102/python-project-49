@@ -2,7 +2,6 @@ from brain_games.games.even import give_question, det_answer
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-PROGR_LEN = None
 
 
 def is_answer(value):
