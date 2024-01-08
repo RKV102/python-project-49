@@ -8,12 +8,10 @@ PROGR_LEN = 10
 def create_progr():
     number = randint(0, 100)
     step = randint(0, 100)
-    progr = list()
-    i = 0
-    while i < PROGR_LEN:
+    progr = []
+    for i in range(PROGR_LEN):
         number += step
         progr.append(number)
-        i += 1
     return progr
 
 
