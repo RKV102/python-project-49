@@ -17,7 +17,10 @@ def give_question(start_msg):
     return rand_value
 
 
-def det_answer(question_hint, is_answer):
-    if is_answer(question_hint):
+def det_answer(question_hint, predicate):
+    if predicate(question_hint):
         return 'yes'
     return 'no'
+
+
+predicate = is_answer

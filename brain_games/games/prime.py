@@ -18,3 +18,4 @@ def is_answer(value):
 
 give_question = give_question
 det_answer = det_answer
+predicate = is_answer

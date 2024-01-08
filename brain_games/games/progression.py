@@ -50,4 +50,4 @@ def det_answer(question_hint, _):
     return str(question_hint)
 
 
-is_answer = None
+predicate = None

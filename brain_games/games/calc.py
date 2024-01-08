@@ -39,4 +39,4 @@ def get_sign(iterable):
     return iterable[1]
 
 
-is_answer = None
+predicate = None

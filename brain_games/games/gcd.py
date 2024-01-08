@@ -42,4 +42,4 @@ def det_answer(iterable, _):
     return str(gcd)
 
 
-is_answer = None
+predicate = None
