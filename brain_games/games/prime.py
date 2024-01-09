@@ -1,6 +1,3 @@
-from brain_games.games.even import generate_round
-
-
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -15,5 +12,14 @@ def is_prime(num):
     return True
 
 
-generate_round = generate_round
+def generate_round(predicate):
+    rand_num = randint(0, 100)
+    question = 'rand_num'
+    if predicate(rand_num) is True:
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
+    return question, right_answer
+
+
 predicate = is_prime
