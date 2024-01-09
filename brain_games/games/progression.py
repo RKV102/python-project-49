@@ -17,10 +17,10 @@ def create_progr():
 
 def hide_item_in_progr(progr):
     new_progr = progr[:]
-    hide_pos = choice(range(PROGR_LEN))
-    hide_item = str(progr[hide_pos])
-    new_progr[hide_pos] = '..'
-    return hide_item, new_progr
+    hidden_pos = choice(range(PROGR_LEN))
+    hidden_item = str(progr[hidden_pos])
+    new_progr[hidden_pos] = '..'
+    return hidden_item, new_progr
 
 
 def create_question(new_progr):
@@ -30,7 +30,7 @@ def create_question(new_progr):
 
 def generate_round():
     progr = create_progr()
-    hide_item, new_progr = hide_item_in_progr(progr)
+    hidden_item, new_progr = hide_item_in_progr(progr)
     question = create_question(new_progr)
-    right_answer = hide_item
+    right_answer = hidden_item
     return question, right_answer
