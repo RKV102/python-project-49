@@ -24,7 +24,12 @@ def hide_item_in_progr(progr):
 
 
 def create_question(new_progr):
-    question = ' '.join(new_progr)
+    question = ''
+    for pos, item in enumerate(new_progr):
+        if pos == 0:
+            question += str(item)
+        else:
+            question = f'{question} {item}'
     return question
 
 
