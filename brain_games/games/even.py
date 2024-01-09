@@ -10,7 +10,7 @@ def is_even(num):
 
 def generate_round():
     rand_num = randint(0, 100)
-    question = 'rand_num'
+    question = rand_num
     if is_even(rand_num):
         right_answer = 'yes'
     else:
