@@ -5,12 +5,10 @@ def run_game(game):
     print('Welcome to the Brain Games!')
     user_name = string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    description = game.DESCRIPTION
     predicate = game.predicate
-    generate_round = game.generate_round
-    print(description)
+    print(game.DESCRIPTION)
     for i in range(3):
-        question, right_answer = generate_round('Question:', predicate)
+        question, right_answer = game.generate_round('Question:', predicate)
         print(question)
         user_answer = input('Your answer: ')
         if user_answer == right_answer:
