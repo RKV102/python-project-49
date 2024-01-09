@@ -27,6 +27,3 @@ def find_gcd(rand_num_1, rand_num_2):
         if rand_num_1 % i == 0 and rand_num_2 % i == 0:
             gcd = i
     return gcd
-
-
-predicate = None
