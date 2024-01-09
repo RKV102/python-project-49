@@ -23,17 +23,15 @@ def hide_item_in_progr(progr):
     return hide_item, new_progr
 
 
-def create_question(new_progr, start_of_question):
-    question = start_of_question
-    for item in new_progr:
-        question = f'{question} {item}'
+def create_question(new_progr):
+    question = ' '.join(new_progr)
     return question
 
 
-def generate_round(start_of_question, _):
+def generate_round(_):
     progr = create_progr()
     hide_item, new_progr = hide_item_in_progr(progr)
-    question = create_question(new_progr, start_of_question)
+    question = create_question(new_progr)
     right_answer = hide_item
     return question, right_answer
 

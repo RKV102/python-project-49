@@ -11,9 +11,9 @@ def is_even(num):
     return False
 
 
-def generate_round(start_of_question, predicate):
+def generate_round(predicate):
     rand_num = randint(0, 100)
-    question = f'{start_of_question} {rand_num}'
+    question = 'rand_num'
     if predicate(rand_num) is True:
         right_answer = 'yes'
     else:

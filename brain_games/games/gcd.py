@@ -4,10 +4,10 @@ from random import randint
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def generate_round(start_of_question, _):
+def generate_round(_):
     rand_num_1 = randint(0, 100)
     rand_num_2 = randint(0, 100)
-    question = f'{start_of_question} {rand_num_1} {rand_num_2}'
+    question = f'{rand_num_1} {rand_num_2}'
     match rand_num_1 < rand_num_2:
         case True:
             min_num = rand_num_1

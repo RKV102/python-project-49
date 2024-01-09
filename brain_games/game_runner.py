@@ -8,8 +8,8 @@ def run_game(game):
     predicate = game.predicate
     print(game.DESCRIPTION)
     for i in range(3):
-        question, right_answer = game.generate_round('Question:', predicate)
-        print(question)
+        question, right_answer = game.generate_round(predicate)
+        print(f'Question: {question}')
         user_answer = input('Your answer: ')
         if user_answer == right_answer:
             print('Correct!')
