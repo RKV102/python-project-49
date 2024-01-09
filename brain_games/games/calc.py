@@ -4,7 +4,7 @@ from random import choice, randint
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def generate_round(_):
+def generate_round():
     rand_num_1 = randint(0, 100)
     rand_num_2 = randint(0, 100)
     signs = ('+', '-', '*')
@@ -18,6 +18,3 @@ def generate_round(_):
         case _:
             right_answer = str(rand_num_1 * rand_num_2)
     return question, right_answer
-
-
-predicate = None

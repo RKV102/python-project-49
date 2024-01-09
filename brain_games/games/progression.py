@@ -28,12 +28,9 @@ def create_question(new_progr):
     return question
 
 
-def generate_round(_):
+def generate_round():
     progr = create_progr()
     hide_item, new_progr = hide_item_in_progr(progr)
     question = create_question(new_progr)
     right_answer = hide_item
     return question, right_answer
-
-
-predicate = None

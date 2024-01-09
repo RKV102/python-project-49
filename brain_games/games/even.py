@@ -8,14 +8,11 @@ def is_even(num):
     return bool(not num % 2)
 
 
-def generate_round(predicate):
+def generate_round():
     rand_num = randint(0, 100)
     question = 'rand_num'
-    if predicate(rand_num) is True:
+    if is_even(rand_num):
         right_answer = 'yes'
     else:
         right_answer = 'no'
     return question, right_answer
-
-
-predicate = is_even

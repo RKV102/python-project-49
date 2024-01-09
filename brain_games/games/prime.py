@@ -12,14 +12,11 @@ def is_prime(num):
     return True
 
 
-def generate_round(predicate):
+def generate_round():
     rand_num = randint(0, 100)
     question = 'rand_num'
-    if predicate(rand_num) is True:
+    if is_prime(rand_num):
         right_answer = 'yes'
     else:
         right_answer = 'no'
     return question, right_answer
-
-
-predicate = is_prime
