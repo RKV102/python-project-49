@@ -5,10 +5,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
-    num_mod = num % 2
-    if num_mod == 0:
-        return True
-    return False
+    return bool(not num % 2)
 
 
 def generate_round(predicate):
