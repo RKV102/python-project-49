@@ -4,7 +4,8 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(num): return not num % 2
+def is_even(num):
+    return not num % 2
 
 
 def generate_round():
