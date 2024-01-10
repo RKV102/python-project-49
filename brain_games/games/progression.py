@@ -8,11 +8,9 @@ PROGRESSION_LEN = 10
 def create_progression():
     number = randint(0, 100)
     step = randint(0, 100)
-    progression = []
-    for i in range(PROGRESSION_LEN):
-        number += step
-        progression.append(number)
-    return progression
+    number = randint(0, 100)
+    step = randint(0, 100)
+    return list(range(number, number + step * PROGRESSION_LEN, step))
 
 
 def hide_item_in_progression(progression):
