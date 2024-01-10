@@ -2,14 +2,14 @@ from random import choice, randint
 
 
 DESCRIPTION = 'What number is missing in the progression?'
-PROGR_LEN = 10
+PROGRESSION_LEN = 10
 
 
 def create_progr():
     number = randint(0, 100)
     step = randint(0, 100)
     progr = []
-    for i in range(PROGR_LEN):
+    for i in range(PROGRESSION_LEN):
         number += step
         progr.append(number)
     return progr
@@ -17,7 +17,7 @@ def create_progr():
 
 def hide_item_in_progr(progr):
     new_progr = progr[:]
-    hidden_pos = choice(range(PROGR_LEN))
+    hidden_pos = choice(range(PROGRESSION_LEN))
     hidden_item = str(progr[hidden_pos])
     new_progr[hidden_pos] = '..'
     return hidden_item, new_progr
