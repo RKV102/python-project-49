@@ -5,7 +5,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
-    return bool(not num % 2)
+    return not num % 2
 
 
 def generate_round():
