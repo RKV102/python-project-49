@@ -5,27 +5,27 @@ DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LEN = 10
 
 
-def create_progr():
+def create_progression():
     number = randint(0, 100)
     step = randint(0, 100)
-    progr = []
+    progression = []
     for i in range(PROGRESSION_LEN):
         number += step
-        progr.append(number)
-    return progr
+        progression.append(number)
+    return progression
 
 
-def hide_item_in_progr(progr):
-    new_progr = progr[:]
+def hide_item_in_progression(progression):
+    new_progression = progression[:]
     hidden_pos = choice(range(PROGRESSION_LEN))
-    hidden_item = str(progr[hidden_pos])
-    new_progr[hidden_pos] = '..'
-    return hidden_item, new_progr
+    hidden_item = str(progression[hidden_pos])
+    new_progression[hidden_pos] = '..'
+    return hidden_item, new_progression
 
 
-def create_question(new_progr):
+def create_question(new_progression):
     question = ''
-    for pos, item in enumerate(new_progr):
+    for pos, item in enumerate(new_progression):
         if pos == 0:
             question += str(item)
         else:
@@ -34,8 +34,8 @@ def create_question(new_progr):
 
 
 def generate_round():
-    progr = create_progr()
-    hidden_item, new_progr = hide_item_in_progr(progr)
-    question = create_question(new_progr)
+    progression = create_progression()
+    hidden_item, new_progression = hide_item_in_progression(progression)
+    question = create_question(new_progression)
     right_answer = hidden_item
     return question, right_answer
