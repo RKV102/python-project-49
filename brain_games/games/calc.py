@@ -12,9 +12,9 @@ def generate_round():
     question = f'{rand_num_1} {chosen_sign} {rand_num_2}'
     match chosen_sign:
         case '+':
-            right_answer = str(rand_num_1 + rand_num_2)
+            right_answer = rand_num_1 + rand_num_2
         case '-':
-            right_answer = str(rand_num_1 - rand_num_2)
+            right_answer = rand_num_1 - rand_num_2
         case _:
-            right_answer = str(rand_num_1 * rand_num_2)
-    return question, right_answer
+            right_answer = rand_num_1 * rand_num_2
+    return question, str(right_answer)
