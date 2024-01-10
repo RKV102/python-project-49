@@ -8,8 +8,6 @@ PROGRESSION_LEN = 10
 def create_progression():
     number = randint(0, 100)
     step = randint(0, 100)
-    number = randint(0, 100)
-    step = randint(0, 100)
     return list(range(number, number + step * PROGRESSION_LEN, step))
 
 
