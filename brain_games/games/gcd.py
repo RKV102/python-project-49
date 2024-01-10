@@ -14,15 +14,10 @@ def generate_round():
 
 
 def find_gcd(rand_num_1, rand_num_2):
-    if rand_num_1 < rand_num_2:
-        min_num = rand_num_1
-        max_num = rand_num_2
-    else:
-        min_num = rand_num_2
-        max_num = rand_num_1
+    min_num = min(rand_num_1, rand_num_2)
+    max_num = max(rand_num_1, rand_num_2)
     if min_num == 0:
-        gcd = max_num
-    for i in range(1, min_num + 1):
-        if rand_num_1 % i == 0 and rand_num_2 % i == 0:
-            gcd = i
-    return gcd
+        return max_num
+    return max(i for i in range(1, min_num + 1)
+               if not bool(rand_num_1 % i)
+               and not bool(rand_num_2 % i))
