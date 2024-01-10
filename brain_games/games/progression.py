@@ -13,15 +13,11 @@ def create_progression():
     return list(range(number, number + step * PROGRESSION_LEN, step))
 
 
-def create_question(progression):
-    return ' '.join(map(str, progression))
-
-
 def generate_round():
     progression = create_progression()
     hidden_pos = choice(range(PROGRESSION_LEN))
     hidden_item = str(progression[hidden_pos])
     progression[hidden_pos] = '..'
-    question = create_question(progression)
+    question = ' '.join(map(str, progression))
     right_answer = hidden_item
     return question, right_answer
