@@ -14,13 +14,7 @@ def create_progression():
 
 
 def create_question(progression):
-    question = ''
-    for pos, item in enumerate(progression):
-        if pos == 0:
-            question += str(item)
-        else:
-            question = f'{question} {item}'
-    return question
+    return ' '.join(map(str, progression))
 
 
 def generate_round():
